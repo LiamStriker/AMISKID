@@ -12,13 +12,13 @@ Rewritten by: Quanta#5556 (N)
 ## requirements
  Check requirements.txt ,  extras are added because of the future addons.
 
-##Installation
+## Installation
 
 after cloning, open config.json, set your Prefix, Token and api_key. Then
 ```
 python3 ami.py
 ```
-#Heroku Hosting
+## Heroku Hosting
 
 do the usual (if you know), then under config vas add **KEYs and deploy with worker enabled.**
 
