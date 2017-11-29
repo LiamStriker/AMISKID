@@ -20,6 +20,6 @@ python3 ami.py
 ```
 ## Heroku Hosting
 
-do the usual (if you know), then under config vas add **KEYs and deploy with worker enabled.**
+do the usual (if you know), then under config vars add **KEYs and deploy with worker enabled.**
 
 *Thank You.*
