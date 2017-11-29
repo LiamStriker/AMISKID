@@ -18,7 +18,7 @@ import aiohttp
 
 class AmiBot(commands.Bot):
     '''
-    A Bot Made by ~ Quanta#5556
+    A Bot Made by ~ Quanta#5556 , Liam#1074
     '''
     mentions_transforms = {
           '@everyone': '@\u200beveryone',
