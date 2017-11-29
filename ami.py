@@ -1,5 +1,5 @@
 '''
-Original Base From Selfbot.py
+Originally Base-Derived
 
 Edited by Quanta#5556 (N)
 
