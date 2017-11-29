@@ -45,18 +45,6 @@ class AmiBot(commands.Bot):
                 print('CannotLoad: {0}\n'
                       '{type(e).__name__}: {1}'.format(extension, e))
 
-    @property
-    def token(self):
-        '''Get the Token'''
-        with open('data/config.json') as f:
-            config = json.load(f)
-            if config["TOKEN"] == "your_token_here":
-                token = os.environ.get("TOKEN")
-                token = "{}".format(token)
-            else:
-                token = config["TOKEN"]
-        return token
-
     @staticmethod
     async def get_pre(bot, message):
         '''GET THE PREFIX'''
