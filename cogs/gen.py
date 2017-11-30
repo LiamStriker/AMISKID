@@ -119,7 +119,7 @@ class Gen:
     async def invite(self,ctx):
         '''invite the bot'''
         em = discord.Embed(title = "My Invite Link", url = "https://discordapp.com/oauth2/authorize?client_id=381111258172227585&scope=bot&permissions=0")
-        em.set_author(name = "You Can get Me From Here (^~^)", icon_url = ctx.message.bot.user.avatar_url)
+        em.set_author(name = "You Can get Me From Here (^~^)", icon_url = ctx.message.author.avatar_url)
 	
         await ctx.send(embed = em)
 
