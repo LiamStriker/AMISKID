@@ -16,7 +16,6 @@ from collections import defaultdict
 import datetime
 import aiohttp
 
-client = discord.Client()
 
 class AmiBot(commands.Bot):
     '''
@@ -81,7 +80,6 @@ class AmiBot(commands.Bot):
         '''SET THE UPTIME'''
         self.uptime = datetime.datetime.utcnow()
         await self.change_presence(game = discord.Game(name="ophelp ~LIAM & Q(N)",type =0))
-        await client.edit(username = "Ami")
 
     async def on_command(self, ctx):
         cmd = ctx.command.qualified_name.replace(' ', '_')
