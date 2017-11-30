@@ -16,7 +16,7 @@ from collections import defaultdict
 import datetime
 import aiohttp
 
-client = discord.ClientUser()
+client = discord.Client()
 
 class AmiBot(commands.Bot):
     '''
