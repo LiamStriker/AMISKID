@@ -173,7 +173,7 @@ class Information:
         if days:
             fmt = '{d}d ' + fmt
         uptime = fmt.format(d=days, h=hours, m=minutes, s=seconds)
-        embed.add_field(name='Owner', value='Liam#1074 And Quanta#5556 (N)', inline = False)
+        embed.add_field(name='Owner', value='The OP Team Liam#1074 And Quanta#5556 (N)', inline = False)
         embed.add_field(name='Uptime', value=uptime, inline = False)
         embed.add_field(name='Guilds', value=len(self.bot.guilds), inline = False)
         embed.add_field(name='Members', value=f'{total_unique} total\n{total_online} online', inline = False)
