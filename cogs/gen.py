@@ -114,6 +114,16 @@ class Gen:
          cl_resp = cl_load.say("{}".format(args))
          await ctx.send(content = cl_resp)
          cl_load.reset()
+
+    @commands.command()
+    async def invite(self,ctx):
+        '''invite the bot'''
+        em = discord.Embed(title = "You Can get Me From Here :heart:", url = "https://discordapp.com/oauth2/authorize?client_id=381111258172227585&scope=bot&permissions=0")
+        em.set_author(name = "My Invite Link", icon_url = ctx.message.author.avatar_url)
+	em.set_footer(text='Thank You~')
+	
+        await ctx.send(embed = em)
+
 		    	
 
 def setup(bot):
