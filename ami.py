@@ -78,7 +78,8 @@ class AmiBot(commands.Bot):
     async def on_ready(self):
         '''SET THE UPTIME'''
         self.uptime = datetime.datetime.utcnow()
-        await self.change_presence(game = discord.Game(name="op "+"=prefix ~LIAM & Q(N)",type =0))
+        await self.change_presence(game = discord.Game(name="ophelp ~LIAM & Q(N)",type =0))
+        await self.edit_profile(username = 'Ami')
 
     async def on_command(self, ctx):
         cmd = ctx.command.qualified_name.replace(' ', '_')
