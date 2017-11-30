@@ -52,7 +52,7 @@ class Gen:
             if cl_key["cleverbot_key"] == "api_key_here":
                 key_cl = os.environ.get("cleverbot_key")
             else:
-                key_cl = cl_key["cleverbot"]
+                key_cl = cl_key["cleverbot_key"]
 
         return key_cl
 
