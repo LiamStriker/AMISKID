@@ -114,14 +114,7 @@ class Gen:
          cl_resp = cl_load.say("{}".format(args))
          await ctx.send(content = cl_resp)
          cl_load.reset()
-		
-    @commands.command(aliases=['invite'])
-    async def invite(self, ctx):
-        em = discord.Embed()
-        em.set_author(<Get Me From Here>, url = "https://discordapp.com/oauth2/authorize?client_id=381111258172227585&scope=bot&permissions=0")
-        await ctx.send(embed=embed)  
-	
-
+		    	
 
 def setup(bot):
 	bot.add_cog(Gen(bot))
