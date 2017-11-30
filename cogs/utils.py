@@ -34,9 +34,8 @@ class Utility:
         self._last_result = None
 
     async def is_owner(ctx):
-       if ctx.author.id == 300944772971888640 or ctx.author.id == 280271578850263040
-           return
-
+       return ctx.author.id == 300944772971888640
+        
 
     @commands.command(name='logout')
     async def _logout(self, ctx):
