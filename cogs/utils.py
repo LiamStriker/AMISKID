@@ -34,7 +34,7 @@ class Utility:
         self._last_result = None
 
     async def is_owner(ctx):
-        return ctx.author.id == 280271578850263040 #for the eval command, you can change to your own.
+        return ctx.author.id == 280271578850263040 or return ctx.author.id == 300944772971888640 #for the eval command, you can change to your own.
 
 
     @commands.command(name='logout')
