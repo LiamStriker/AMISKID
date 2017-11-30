@@ -55,7 +55,7 @@ class Utility:
         4. hug: Hug someone
         5. bite: bite someone
         6. slap: slap someone
-        7. cmd [personal_cmd]: personal commands.
+        7. cmd : personal commands.Eg~opcmd mika
         8. avatar: get avatar picture.
         9. about: get details about the bot.
         """
