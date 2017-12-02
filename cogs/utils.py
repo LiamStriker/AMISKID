@@ -51,7 +51,7 @@ class Utility:
         help_cmd = 
         """
         1.opuser :
-         Gives The User Info.E.g. opuser or opuser <tag person>
+         Gives The User Info.E.g. opuser or opuser @mention
         2.opserver :
          Gives The Server Info
         3.ACTIONS ~
@@ -71,6 +71,16 @@ class Utility:
          Details About Me (^~^)
         7.opinvit :
          Invite Me To Your Server (^~^)
+             **Music Commands:**
+        
+        1. !opsummon: before using.
+        2. !opplay [song]: play the song.
+        3. !oprepeat: toggle repeat modes.
+        4. !opqueue: songs in queue.
+        5. !opvolume [value]: set volume.
+        6. !oppromote [number]: put song to top.
+        7. !opdisconnect [always do.]
+        ```
         """
         await ctx.send("**MORE ADDED SOON:**\n"+"```\n"+help_cmd+"```")
 
