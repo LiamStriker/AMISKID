@@ -48,7 +48,8 @@ class Utility:
 
     @commands.command(name='help')
     async def help(self, ctx):
-        help_cmd = """
+        help_cmd =
+        """
         1.opuser :
          Gives The User Info.E.g. opuser or opuser <tag person>
         2.opserver :
@@ -69,7 +70,7 @@ class Utility:
         6.opabout :
          Details About Me (^~^)
         7.opinvit :
-         Invite Me To You Server (^~^)
+         Invite Me To Your Server (^~^)
         """
         await ctx.send("**MORE ADDED SOON:**\n"+"```\n"+help_cmd+"```")
 
