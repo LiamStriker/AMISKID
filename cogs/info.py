@@ -189,20 +189,6 @@ class Information:
         embed.set_footer(text='OP Team')
         await ctx.send(embed=embed)
 	
-   @commands.command()
-    async def music(self,ctx):
-        '''Music commands'''
-        help_cmd = """
-            **__Music Commands:__**
-        ```
-        1. !opsummon: before using.
-        2. !opplay [song]: play the song.
-        3. !oprepeat: toggle repeat modes.
-        4. !opqueue: songs in queue.
-        5. !opvolume [value]: set volume.
-        6. !oppromote [number]: put song to top.
-        7. !opdisconnect [always do.]
-        ```"""
 
 
 def setup(bot):
