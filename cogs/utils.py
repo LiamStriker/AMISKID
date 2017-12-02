@@ -48,8 +48,7 @@ class Utility:
 
     @commands.command(name='help')
     async def help(self, ctx):
-        help_cmd =
-        """
+        help_cmd = """
         1.opuser :
          Gives The User Info.E.g. opuser or opuser <tag person>
         2.opserver :
