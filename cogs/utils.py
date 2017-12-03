@@ -71,15 +71,15 @@ class Utility:
         7.opinvit :
          Invite Me To Your Server (^~^)
              **Music Commands:**
+             Music Prefix : op!
         
-        1. !opsummon: before using.
-        2. !opplay [song]: play the song.
-        3. !oprepeat: toggle repeat modes.
-        4. !opqueue: songs in queue.
-        5. !opvolume [value]: set volume.
-        6. !oppromote [number]: put song to top.
-        7. !opdisconnect [always do.]
-        ```
+        1. op!summon: before using.
+        2. op!play [song]: play the song.
+        3. op!repeat: toggle repeat modes.
+        4. op!queue: songs in queue.
+        5. op!volume [value]: set volume.
+        6. op!promote [number]: put song to top.
+        7. op!disconnect [always do.]
         """
         await ctx.send("**MORE ADDED SOON:**\n"+"```\n"+help_cmd+"```")
 
