@@ -38,6 +38,7 @@ class Utility:
 
 
     @commands.command(name='logout')
+    @commands.check(is_owner)
     async def _logout(self, ctx):
         '''
         Shuts down the selfbot,
