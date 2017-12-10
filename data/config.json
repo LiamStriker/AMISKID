@@ -1,5 +1,5 @@
 {
-    "PREFIX": "op",
+    "PREFIX": ["op","a","A"],
     "TOKEN": "your_token_here",
     "cleverbot_key": "api_key_here"
 
