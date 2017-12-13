@@ -63,7 +63,7 @@ class Utility:
         lala = "`op` **For All Commands** `/`** For Music Commands**"
 
         em = discord.Embed()
-        em.set_thumbnail(url = self.bot.user.avatar_url)
+        em.set_thumbnail(url = https://cdn.discordapp.com/attachments/388676126383276032/390477398287843329/images_5.jpg)
         em.set_author(name = 'Help Menu~',icon_url = self.bot.user.avatar_url )
         em.add_field(name = '**Prefix:**', value = lala, inline = False)
         em.add_field(name = '**1.User:**', value = user, inline = False)
