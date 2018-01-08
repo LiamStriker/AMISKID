@@ -1,7 +1,6 @@
 import discord
 import asyncio
 from discord.ext import commands
-import safygiphy
 import bs4 as bs
 import urllib.request
 from bs4 import BeautifulSoup
