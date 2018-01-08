@@ -119,7 +119,7 @@ class Utility:
 
             cmd = "(Secret)Personal Commands.\n**Uses:** `opcmd [commad]`"
             eightball = "Predict your future.\n**Uses:** `op8ball [Question]`"
-            gif = "Get a gif form Giphy.\n**User:** `opgif [Search query]`"
+            gif = "Get a gif form Giphy.\n**User:** `opgif [Search query]`(will be improved)"
             ami = "Talk to me if you are bored.Start sentence with Ami/ami.\n**Uses Example:** Ami how are you."
             actions = "Actions TO Make The Chat Even More Fun And Interactive.\n**Uses:Action@metion**\n**Actions Are:** `opkiss`, `opslap`, `opbite`, `ophug`"
 
