@@ -121,7 +121,7 @@ class Gen:
 
         em = discord.Embed()
 
-        em = discord.Embed(title = "Click Here To Invite Me", url = "https://discordapp.com/oauth2/authorize?client_id=381111258172227585&scope=bot&permissions=305196166")
+        em = discord.Embed(title = "Click Here To Invite", url = "https://discordapp.com/oauth2/authorize?client_id=381111258172227585&scope=bot&permissions=305196166")
         em.colour = discord.Colour.green()
         em.set_thumbnail(url = "https://cdn.discordapp.com/attachments/388676126383276032/390726053561368577/images_23.jpg")
         em.add_field(name = "Thank You For Using Me", value = """You can also join my **Support Server** if you would like to show your support.\nSupport Server: https://discord.gg/k3PKut6 """, inline = True)
