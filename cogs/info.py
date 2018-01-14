@@ -126,7 +126,8 @@ class Information:
         joined_at = "{}.  **({})** days ago.".format(user.joined_at.strftime("%d %b %Y"), passed1)
         member_number = sorted(server.members, key=lambda m: m.joined_at).index(user) + 1
         em = discord.Embed(colour=color, timestamp=time)
-        em.set_thumbnail(url=avi)
+        em.set_image(url=avi)
+        em.set_thumbnail(url = self.bot.user.avatar_url)
         em.add_field(name='Name:', value=user.name, inline = False)
         em.add_field(name='NickName:', value=user.nick, inline = False)
         em.add_field(name='Member No:',value=str(member_number), inline = False)
