@@ -10,7 +10,8 @@ import json
 import random
 from discord.ext import commands
 from cleverwrap import CleverWrap
-
+import requests
+from bs4 import BeautifulSoup
 
 class Gen:
     def __init__(self, bot):
@@ -129,7 +130,30 @@ class Gen:
 
         await ctx.send(embed = em)
 
-
-
+    @commands.command()
+    async def char(self,ctx, *,args:str = None):
+        if args == None:
+            await ctx.send("`No name provided!`")
+            return
+        badges = []
+        player = []
+        args = args.lower()
+        args = args.replace(' ','+')
+        link = "{}".format(os.environ.get("aq3dcharsite"))
+        link = link+args
+        r = requests.get(link)
+        soup = BeautifulSoup(r.content, 'lxml')
+        gdata = soup.find_all("{}".format(os.environ.get("header")))
+        fdata = soup.find_all("div",{"class": "text-center nopadding"})
+        for n in fdata:
+            kjk = n.text
+            player.append(kjk)
+            lolii = '\n'.join(player)
+        for h in gdata:
+            fmf = h.text
+            badges.append(fmf)
+            klma = '\n'.join(badges)
+        loki = ""+lolii+"\n"+"_"+"\n"+" --Badges-- \n"+" "+klma+""
+        await ctx.send(loki)
 def setup(bot):
 	bot.add_cog(Gen(bot))
