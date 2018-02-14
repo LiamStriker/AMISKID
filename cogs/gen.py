@@ -153,7 +153,7 @@ class Gen:
             fmf = h.text
             badges.append(fmf)
             klma = '\n'.join(badges)
-        loki = ""+lolii+"\n"+"_"+"\n"+"|Badges|\n"+" "+klma+""
+        loki = lolii+"\n\n"+"|Badges|\n"+klma
         await ctx.send("```"+loki+"```")
 def setup(bot):
 	bot.add_cog(Gen(bot))
