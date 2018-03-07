@@ -28,7 +28,7 @@ class Information:
     async def avatar(self, ctx, *, member : discord.Member=None):
         '''Returns someone's avatar url'''
         member = member or ctx.author
-        av = member.avatar_url_as('png')
+        av = member.avatar_url_as(format='png', size=1024)
         if ".gif" in av:
             av += "&f=.gif"
         color = await ctx.get_dominant_color(av)
