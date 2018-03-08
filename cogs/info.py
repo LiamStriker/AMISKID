@@ -27,27 +27,17 @@ class Information:
     @commands.command(aliases=['av'])
     async def avatar(self, ctx, *, member : discord.Member=None):
         '''Returns someone's avatar url'''
-        member = member or ctx.author
-        av = member.avatar_url
-        if ".gif" in av:
-            av += "&f=.gif"
-        color = await ctx.get_dominant_color(av)
-        em = discord.Embed(url=av, color=color)
-        em.set_author(name=str(member), icon_url=av)
-        em.set_image(url=av)
-        try:
-            await ctx.send(embed=em)
-        except discord.HTTPException:
-            em_list = await embedtobox.etb(em)
-            for page in em_list:
-                await ctx.send(page)
-            try:
-                async with ctx.session.get(av) as resp:
-                    image = await resp.read()
-                with io.BytesIO(image) as file:
-                    await ctx.send(file=discord.File(file, 'avatar.png'))
-            except discord.HTTPException:
-                await ctx.send(av)
+        if ctx.author.guild_permissions.manage_messages == True:
+            await ctx.message.delete()
+        mem = member or ctx.author
+        avatar = mem.avatar_url_as(format = "png")
+        if ctx.author.guild_permissions.embed_links == True:
+            em = discord.Embed(url = avatar, color = 0xffd500)
+            em.set_author(name = str(mem), icon_url = avatar)
+            em.set_image(url = avatar)
+            await ctx.send(embed = em)
+        else:
+            await ctx.send(avatar)
 
     @commands.command(aliases=['servericon'], no_pm=True)
     async def serverlogo(self, ctx):
