@@ -32,7 +32,8 @@ class Information:
         mem = member or ctx.author
         avatar = mem.avatar_url_as(format = "png")
         if ctx.author.guild_permissions.embed_links == True:
-            em = discord.Embed(url = avatar, color = 0xffd500)
+            color = await ctx.get_dominant_color(avatar)
+            em = discord.Embed(url = avatar, color = color)
             em.set_author(name = str(mem), icon_url = avatar)
             em.set_image(url = avatar)
             await ctx.send(embed = em)
