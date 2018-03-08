@@ -78,7 +78,7 @@ class AmiBot(commands.Bot):
         '''SET THE UPTIME'''
         self.uptime = datetime.datetime.utcnow()
         server = str(+len(self.guilds))
-        await self.change_presence(game = discord.Game(name="ophelp | In "+server+" Guilds",type =0))
+        await self.change_presence(activity=discord.Game(name="ophelp | In "+server+" Guilds"))
 
     async def on_command(self, ctx):
         cmd = ctx.command.qualified_name.replace(' ', '_')
