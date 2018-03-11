@@ -30,7 +30,7 @@ class Information:
         if ctx.author.guild_permissions.manage_messages == True:
             await ctx.message.delete()
         mem = member or ctx.author
-        avatar = mem.avatar_url_as(format = "png")
+        avatar = mem.avatar_url_as(format = None, static_format = 'png')
         if ctx.author.guild_permissions.embed_links == True:
             color = await ctx.get_dominant_color(avatar)
             em = discord.Embed(url = avatar, color = color)
