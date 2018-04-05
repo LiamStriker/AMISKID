@@ -92,7 +92,7 @@ class FUN:
     @commands.command()
      def violet(self,ctx):
         with open('data/opviolet.json') as f:
-            image = json.load(f) #image credits to Deadman
+            image = json.load(f) #image credits to shiro
         i = random.choice(image)
         em = discord.Embed(title = "Link", url = i)
         em.color = await ctx.get_dominant_color(url=ctx.author.avatar_url)
