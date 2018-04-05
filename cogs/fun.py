@@ -65,7 +65,7 @@ class FUN:
             await ctx.send(args)
 
     @commands.command()
-    async def rem(self,ctx):
+     def rem(self,ctx):
         with open('data/rem.json') as f:
             image = json.load(f) #image credits to Deadman
         i = random.choice(image)
@@ -89,7 +89,16 @@ class FUN:
         await ctx.send(embed=em)
 
 
+    @commands.command()
+     def violet(self,ctx):
+        with open('data/opviolet.json') as f:
+            image = json.load(f) #image credits to Deadman
+        i = random.choice(image)
+        em = discord.Embed(title = "Link", url = i)
+        em.color = await ctx.get_dominant_color(url=ctx.author.avatar_url)
+        em.set_image(url = i)
 
+        await ctx.send(embed=em)
 
 
 
