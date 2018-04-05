@@ -65,7 +65,7 @@ class FUN:
             await ctx.send(args)
 
     @commands.command()
-     def rem(self,ctx):
+    async def rem(self,ctx):
         with open('data/rem.json') as f:
             image = json.load(f) #image credits to Deadman
         i = random.choice(image)
@@ -90,7 +90,7 @@ class FUN:
 
 
     @commands.command()
-     def violet(self,ctx):
+    async def violet(self,ctx):
         with open('data/opviolet.json') as f:
             image = json.load(f) #image credits to shiro
         i = random.choice(image)
