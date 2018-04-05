@@ -1,5 +1,5 @@
 '''for Ami bot by Noble .-.'''
-
+import os
 import discord
 import asyncio
 import requests
@@ -15,7 +15,7 @@ class SoulWorker:
     async def swlogin(self, ctx):
         '''login status'''
         try:
-            url = "https://nyzex.herokuapp.com/noble/api/login-status"
+            url = "{}".format(os.environ.get("login_sw"))
             r = requests.get(url)
             j = json.loads(r.content)
 
@@ -81,7 +81,7 @@ class SoulWorker:
     async def swgame(self, ctx):
         '''game status'''
         try:
-            url = "https://nyzex.herokuapp.com/noble/api/game-status"
+            url = "{}".format(os.environ.get("game_sw"))
             r = requests.get(url)
             j = json.loads(r.content)
             o = j[0]
