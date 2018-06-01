@@ -27,8 +27,6 @@ class Information:
     @commands.command(aliases=['av'])
     async def avatar(self, ctx, *, member : discord.Member=None):
         '''Returns someone's avatar url'''
-        if ctx.author.guild_permissions.manage_messages == True:
-            await ctx.message.delete()
         mem = member or ctx.author
         avatar = mem.avatar_url_as(format = None, static_format = 'png')
         if ctx.author.guild_permissions.embed_links == True:
