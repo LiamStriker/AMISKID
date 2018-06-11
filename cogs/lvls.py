@@ -17,7 +17,7 @@ class levels:
                 self.lvls[id]['xp'] = 0
                 self.lvls[id]['level']['lvlNo'] += 1
                 self.lvls[id]['level']['totalxp'] += self.lvls[id]['level']['totalxp']/2
-                #await message.channel.send(content = f"congrats {self.lvls[id]['name']} you advanced to level {self.lvls[id]['level']['lvlNo']}")
+                await message.channel.send(content = f"congrats {self.lvls[id]['name']} you advanced to level {self.lvls[id]['level']['lvlNo']}")
         data = json.dumps(self.lvls)
         file = open('data/lvls.json', 'w')
         file.write(data)
