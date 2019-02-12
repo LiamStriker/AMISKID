@@ -1,5 +1,5 @@
 '''
-Actual Cog from Selfbot, edited by Quanta#5556 (N) and Liam
+Actual Cog from Selfbot, edited by Liam and Nub
 '''
 import discord
 from discord.ext import commands
