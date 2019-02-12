@@ -1,4 +1,4 @@
-'''for Ami bot by Noble .-.'''
+'''for Ami bot by Liam and Noble .-.'''
 import os
 import discord
 import asyncio
