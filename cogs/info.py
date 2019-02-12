@@ -1,6 +1,6 @@
 '''
 
-Actual Cog from Selfbot, edited by Quanta#5556 , liam
+Actual Cog from Selfbot, edited by liam
 
 
 '''
