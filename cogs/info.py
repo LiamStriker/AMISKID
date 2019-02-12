@@ -1,6 +1,6 @@
 '''
 
-Actual Cog from Selfbot, edited by liam
+Actual Cog from Selfbot, edited and rewritten by liam
 
 
 '''
