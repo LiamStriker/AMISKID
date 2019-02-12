@@ -1,7 +1,7 @@
 '''
 Originally Base-Derived
 
-Owner - Liam#3273, Quanta#5556
+Owner - Liam
 '''
 import os
 import discord
@@ -17,7 +17,7 @@ import aiohttp
 
 class AmiBot(commands.Bot):
     '''
-    A Bot Made by ~  Liam#3273 and Quanta#5556
+    A Bot Made by ~  Liam#3273
     '''
     mentions_transforms = {
           '@everyone': '@\u200beveryone',
