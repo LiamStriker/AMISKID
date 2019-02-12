@@ -6,7 +6,6 @@ It's an experimental bot, more commands yet to come, still deciding if I should 
 
 Well:
 Bot Owner: Liam#1074
-Rewritten by: Quanta#5556 (N)
 
 
 ## requirements
